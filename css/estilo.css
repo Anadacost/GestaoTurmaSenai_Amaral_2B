@@ -1,7 +1,16 @@
 @charset "UTF-8";
 @import "reset.css";
+@import "cores.css";
+
+@font-face{
+  font-family: Mathreal;
+  src: url(fonts/Mathreal.ttf);
+
+
+}
 
 
 body{
   background-color: pink;
+  font-family: Mathreal;
 }
