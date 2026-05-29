@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Este é uma site modelo">
+    <meta name="description" content="Este é um site modelo">
     <meta name="keywords" content="Sites, Web, Desenvolvimento Back-End">
     <meta name="author" content="anakaamm@gmail.com">
 
@@ -20,67 +20,163 @@
 
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Noticias</a></li>
+                <li><a href="lelis2a">Amaral - Turma A</a></li>
+                 <li><a href="amaral2a">Amaral  - Turma B</a></li>
+                <li><a href="lelis2b">Lelis  - Turma A</a></li>
+               
+                   <li><a href="amaral2b">Lelis  - Turma B</a></li>
             </ul>
         </nav>
 
         <div>
             <picture>
-
-                <img src="img/costa.svg" alt="banner">
-
-                
-
+                <img src="img/ffffff.svg" alt="banner">
             </picture>
         </div>
 
         <picture>
-            <source media="(max-width:650px)" srcset="img/banner_comput" >
-            <source media="(max-width:465px)" srcset="img/banner_not_cel" >
-            <img src="img/image.png" alt="gato " >
+            <source media="(max-width:650px)" srcset="img/banner_comput">
+            <source media="(max-width:465px)" srcset="img/banner_not_cel">
+            <img src="img/image.png" alt="gato">
         </picture>
 
-    
+    </header>
 
-        <div class="turmas">
+    <div class="turmasa">
 
-            <section headingoffset="1">
-                <h1>TURMA  de <mark><abbr title="Desenvolvimento de sistema"> Ds <abbr></mark></h1> No Senai mk
-                <header><h2>Lelis - A</h2></header>
-                <div>
-                    <ul class=" lista-alunos lelis" id="alunoslelis">
-                        <li>Maisa</li>
-                        <li>...</li>
-                        <li>...</li>
+        <section>
+            <h1>
+                TURMA de
+                <mark>
+                    <abbr title="Desenvolvimento de sistema">DS</abbr>
+                </mark>
+            </h1>
 
-                    </ul>
-                </div>
+            <h2>Lelis - A</h2>
 
-                 <div class="turmas">
+            <div>
+                <ul class="lista-alunos lelis" id="alunoslelis">
+                    <li>Maisa</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+            </div>
 
-            <section headingoffset="1">
-                <h1>TURMA  de <mark><abbr title="Desenvolvimento de sistema"> Ds <abbr></mark></h1>
-                <header><h2>Amaral - A</h2></header>
-                <div>
-                    <ul class=" lista-alunos lelis" id="alunoslelis">
-                        <li>Ana</li>
-                        <li>Maria</li>
-                        <li>Lavinya</li>
+            <footer>
+               <h3>
+                <mark> <p id="qtdAlunosLelis_A"></p></mark>
+               </h3>
+            </footer>
+        </section>
 
-                    </ul>
-                </div>
+    </div>
+
+    <div class="turmasb">
+
+        <section>
+            <h1>
+                TURMA de
+                <mark>
+                    <abbr title="Desenvolvimento de sistema">DS</abbr>
+                </mark>
+            </h1>
+
+            <h2>Amaral - A</h2>
+
+            <div>
+                <ul class="lista-alunos Amaral" id="alunosamarala">
+                    <li>Ana</li>
+                    <li>Maria</li>
+                    <li>Lavinya</li>
+                </ul>
+            </div>
+
+            <footer>
+            <footer>
+               <h3>
+                <mark> <p id="qtdAlunosAmaral_A"></p></mark>
+               </h3>
+            </footer>
+        </section>
+
+    </div>
+
+    <div class="turmasc">
+
+        <section>
+            <h1>
+                TURMA de
+                <mark>
+                    <abbr title="Desenvolvimento de sistema">DS</abbr>
+                </mark>
+            </h1>
+
+            <h2>Lelis - B</h2>
+
+            <div>
+                <ul class="lista-alunos lelis" id="alunoslelisb">
+                    <li>Lucas</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+            <footer>
+             <footer>
+               <h3>
+                <mark> <p id="qtdAlunosLelis_B"></p></mark>
+               </h3>
+            </footer>
+            </footer>
+        </section>
+
+    </div>
+
+    <div class="turmasd">
+
+        <section>
+            <h1>
+                TURMA de
+                <mark>
+                    <abbr title="Desenvolvimento de sistema">DS</abbr>
+                </mark>
+            </h1>
+
+            <h2>Amaral - B</h2>
+
+            <div>
+                <ul class="lista-alunos lelis" id="alunosamaralb">
+                    <li>Não tem</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ul>
+            </div>
+
+            <footer>
+               <footer>
+               <h3>
+                <mark> <p id="qtdAlunosAmaral_B"></p></mark>
+               </h3>
+            </footer>
+            </footer>
+        </section>
+
+    </div>
+    <script>
+        function contarQuantidadeAlunos(lista,qtd){
+            const listaAlunos = document.getElementById(lista);
+            const quantidade = listaAlunos.querySelectorAll("li").length;
+            document.getElementById(qtd).textContent = quantidade;
+        }
+        contarQuantidadeAlunosTurma('alunosLelis_A', qtdAlunosLelis_B);
+        contarQuantidadeAlunosTurma('alunosLelis_B', qtdAlunosLelis_A);
+
+        contarQuantidadeAlunosTurma('alunosAmaral_A', qtdAlunosAmaral_B);
+        contarQuantidadeAlunosTurma('alunosAmaral_B', qtdAlunosAmaral_A);
+       
+    </script>  
 
 
-            
-                <footer>
-                    <div>Quantidade de alunos</div>
-                    <p id="qtdAlunoslelis"></p><mark>50</mark></p>
-                </footer>
-           
 </body>
-
+ . 
 </html>
-
-

@@ -16,3 +16,18 @@ body{
   font-family: Mathreal;
   background-color: var(--lime-cream)
 }
+.turmasa,
+.turmasb,
+.turmasc,
+.turmasd {
+    border: 3px solid;
+   
+    padding: 20px;
+
+    margin: 30px auto;
+    border-radius: 15px;
+}
+
+
+
+ 
